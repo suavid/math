@@ -49,10 +49,10 @@ namespace Engine::Math
 
                     for (auto l = 0; l < N; l++)
                     {
-                        acumm += (data[i + i * l] * other[l + l * j]);
+                        acumm += (data[l + i * N] * other[j + l * K]);
                     }
 
-                    result[i + i * j] = acumm;
+                    result[j + i * K] = acumm;
                 }
             }
 

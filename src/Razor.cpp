@@ -20,7 +20,7 @@ int main(int argc, char **arc)
     {
         for (auto j = 0; j < result.columns; j++)
         {
-            std::cout << result[i + i*j] << "\t";
+            std::cout << result[j + i * result.columns] << "\t";
         }
 
         std::cout << "\n";
