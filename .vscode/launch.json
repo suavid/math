@@ -1,0 +1,14 @@
+{
+    "version": "0.2",
+    "configurations": [
+        {
+            "name": "Debug Razor",
+            "type": "lldb",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/razor", // Update this path according to your build configuration
+            "args": [], // Arguments to your program if any
+            "cwd": "${workspaceFolder}",
+            "preLaunchTask": "build"
+        }
+    ]
+}
